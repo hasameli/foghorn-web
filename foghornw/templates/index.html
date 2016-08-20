@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <section>
+      <h2>Whitelist Entries</h2>
+      <ul>
+        {% for entry in whitelist %}
+        <li>{{ entry }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section>
+      <h2>Blacklist Entries</h2>
+      <ul>
+        {% for entry in blacklist %}
+        <li>{{ entry }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section>
+      <h2>Greylist Entries</h2>
+      <ul>
+        {% for entry in greylist %}
+        <li>{{ entry }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+  </body>
+</html>
+
